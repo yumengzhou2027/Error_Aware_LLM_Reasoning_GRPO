@@ -1,0 +1,41 @@
+{
+  "_comment": "Lightweight config for quick iteration / testing on a laptop. Reference for reduced hyperparameters — pass individual fields as CLI flags to run_experiment.py.",
+
+  "tokenizer": "data/tokenizer",
+  "sft_checkpoint": "models/instruction_<TIMESTAMP>/best_model.pt",
+  "output_dir": "experiments/run_debug",
+
+  "data_mode": "generated",
+  "num_samples": 200,
+  "max_depth": 4,
+  "num_range_min": 1,
+  "num_range_max": 20,
+  "seed": 0,
+
+  "num_epochs": 1,
+  "batch_size": 1,
+  "learning_rate": 1e-5,
+  "warmup_steps": 10,
+  "gradient_clip": 1.0,
+  "num_candidates": 2,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.9,
+  "kl_penalty_coef": 0.05,
+  "max_gen_length": 400,
+  "gradient_accumulation_steps": 4,
+  "save_every": 50,
+  "eval_every": 50,
+  "log_every": 10,
+
+  "reward_weights": [0.10, 0.40, 0.20, 0.30],
+  "schedule_strategy": "linear",
+  "schedule_phase1_frac": 0.25,
+  "schedule_phase2_frac": 0.75,
+
+  "eval_samples": 100,
+  "eval_seed": 123,
+  "eval_per_depth": true,
+
+  "conditions": ["outcome_only", "error_aware"]
+}

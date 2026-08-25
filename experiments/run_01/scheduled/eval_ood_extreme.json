@@ -1,0 +1,41 @@
+{
+  "total": 800,
+  "exact_match_accuracy": 0.025,
+  "parse_success_rate": 0.755,
+  "taxonomy_counts": {
+    "correct_reasoning": 20,
+    "specious_cot": 0,
+    "unlucky": 279,
+    "failed": 501
+  },
+  "taxonomy_fractions": {
+    "correct_reasoning": 0.025,
+    "specious_cot": 0.0,
+    "unlucky": 0.34875,
+    "failed": 0.62625
+  },
+  "error_distribution": {
+    "independent": 302,
+    "propagated": 30,
+    "invalid_operands": 0
+  },
+  "per_depth": {
+    "8": {
+      "count": 800,
+      "accuracy": 0.025,
+      "taxonomy_counts": {
+        "correct_reasoning": 20,
+        "specious_cot": 0,
+        "unlucky": 279,
+        "failed": 501
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.025,
+        "specious_cot": 0.0,
+        "unlucky": 0.34875,
+        "failed": 0.62625
+      },
+      "avg_computational_correctness": 0.5062862103174602
+    }
+  }
+}

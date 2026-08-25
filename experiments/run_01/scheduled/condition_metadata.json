@@ -1,0 +1,39 @@
+{
+  "condition": "scheduled",
+  "description": "Error-aware + adaptive reward weight scheduling",
+  "reward_mode": "scheduled",
+  "training_time_seconds": 9785.856098175049,
+  "output_dir": "experiments/run_01/scheduled",
+  "config": {
+    "learning_rate": 1e-05,
+    "batch_size": 2,
+    "num_epochs": 3,
+    "warmup_steps": 50,
+    "gradient_clip": 1.0,
+    "save_every": 200,
+    "eval_every": 100,
+    "device": "mps",
+    "num_candidates": 4,
+    "temperature": 0.8,
+    "top_k": 50,
+    "top_p": 0.9,
+    "kl_penalty_coef": 0.05,
+    "advantage_epsilon": 1e-08,
+    "max_gen_length": 400,
+    "gradient_accumulation_steps": 1,
+    "log_every": 25,
+    "reward_mode": "scheduled",
+    "reward_weights": [
+      0.1,
+      0.4,
+      0.2,
+      0.3
+    ],
+    "schedule_strategy": "linear",
+    "schedule_phase1_frac": 0.25,
+    "schedule_phase2_frac": 0.5
+  },
+  "global_step": 3000,
+  "log_path": "experiments/run_01/scheduled/grpo_training_log.json",
+  "final_checkpoint_path": "experiments/run_01/scheduled/final_model.pt"
+}

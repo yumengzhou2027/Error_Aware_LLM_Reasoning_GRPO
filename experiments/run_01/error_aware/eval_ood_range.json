@@ -1,0 +1,109 @@
+{
+  "total": 800,
+  "exact_match_accuracy": 0.0175,
+  "parse_success_rate": 1.0,
+  "taxonomy_counts": {
+    "correct_reasoning": 14,
+    "specious_cot": 0,
+    "unlucky": 326,
+    "failed": 460
+  },
+  "taxonomy_fractions": {
+    "correct_reasoning": 0.0175,
+    "specious_cot": 0.0,
+    "unlucky": 0.4075,
+    "failed": 0.575
+  },
+  "error_distribution": {
+    "independent": 373,
+    "propagated": 39,
+    "invalid_operands": 0
+  },
+  "per_depth": {
+    "1": {
+      "count": 160,
+      "accuracy": 0.01875,
+      "taxonomy_counts": {
+        "correct_reasoning": 3,
+        "specious_cot": 0,
+        "unlucky": 64,
+        "failed": 93
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.01875,
+        "specious_cot": 0.0,
+        "unlucky": 0.4,
+        "failed": 0.58125
+      },
+      "avg_computational_correctness": 0.4
+    },
+    "2": {
+      "count": 160,
+      "accuracy": 0.025,
+      "taxonomy_counts": {
+        "correct_reasoning": 4,
+        "specious_cot": 0,
+        "unlucky": 54,
+        "failed": 102
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.025,
+        "specious_cot": 0.0,
+        "unlucky": 0.3375,
+        "failed": 0.6375
+      },
+      "avg_computational_correctness": 0.425625
+    },
+    "3": {
+      "count": 160,
+      "accuracy": 0.01875,
+      "taxonomy_counts": {
+        "correct_reasoning": 3,
+        "specious_cot": 0,
+        "unlucky": 59,
+        "failed": 98
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.01875,
+        "specious_cot": 0.0,
+        "unlucky": 0.36875,
+        "failed": 0.6125
+      },
+      "avg_computational_correctness": 0.49328869047619045
+    },
+    "4": {
+      "count": 160,
+      "accuracy": 0.01875,
+      "taxonomy_counts": {
+        "correct_reasoning": 3,
+        "specious_cot": 0,
+        "unlucky": 71,
+        "failed": 86
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.01875,
+        "specious_cot": 0.0,
+        "unlucky": 0.44375,
+        "failed": 0.5375
+      },
+      "avg_computational_correctness": 0.5880156475468976
+    },
+    "5": {
+      "count": 160,
+      "accuracy": 0.00625,
+      "taxonomy_counts": {
+        "correct_reasoning": 1,
+        "specious_cot": 0,
+        "unlucky": 78,
+        "failed": 81
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.00625,
+        "specious_cot": 0.0,
+        "unlucky": 0.4875,
+        "failed": 0.50625
+      },
+      "avg_computational_correctness": 0.6445310245310245
+    }
+  }
+}

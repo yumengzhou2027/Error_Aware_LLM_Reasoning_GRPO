@@ -1,0 +1,48 @@
+{
+  "_comment": "Base configuration for a 4-condition GRPO experiment. Reference for default hyperparameters — pass individual fields as CLI flags to run_experiment.py.",
+
+  "tokenizer": "data/tokenizer",
+  "sft_checkpoint": "models/instruction_<TIMESTAMP>/best_model.pt",
+  "output_dir": "experiments/run_01",
+
+  "_comment_data": "Synthetic data generation settings",
+  "data_mode": "generated",
+  "num_samples": 2000,
+  "max_depth": 5,
+  "num_range_min": 1,
+  "num_range_max": 20,
+  "seed": 42,
+
+  "_comment_training": "GRPO training hyperparameters (identical across all 4 conditions)",
+  "num_epochs": 3,
+  "batch_size": 2,
+  "learning_rate": 1e-5,
+  "warmup_steps": 50,
+  "gradient_clip": 1.0,
+  "num_candidates": 4,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.9,
+  "kl_penalty_coef": 0.05,
+  "max_gen_length": 400,
+  "gradient_accumulation_steps": 1,
+  "save_every": 200,
+  "eval_every": 100,
+  "log_every": 25,
+
+  "_comment_reward": "Default reward weights: [format, process, consistency, outcome]",
+  "reward_weights": [0.10, 0.40, 0.20, 0.30],
+
+  "_comment_schedule": "Adaptive scheduler settings (used only by the 'scheduled' condition)",
+  "schedule_strategy": "linear",
+  "schedule_phase1_frac": 0.25,
+  "schedule_phase2_frac": 0.75,
+
+  "_comment_eval": "Evaluation settings",
+  "eval_samples": 500,
+  "eval_seed": 123,
+  "eval_per_depth": true,
+
+  "_comment_conditions": "Set to null to run all 4, or specify a subset",
+  "conditions": null
+}

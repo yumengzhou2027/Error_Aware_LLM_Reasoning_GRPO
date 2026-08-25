@@ -1,0 +1,9 @@
+# Core deep learning
+torch==2.10.0
+numpy==2.4.2
+
+# Training utilities
+tqdm==4.67.3
+
+# Visualization
+matplotlib==3.10.8

@@ -1,0 +1,160 @@
+{
+  "total": 800,
+  "exact_match_accuracy": 0.67125,
+  "parse_success_rate": 0.855,
+  "taxonomy_counts": {
+    "correct_reasoning": 533,
+    "specious_cot": 4,
+    "unlucky": 176,
+    "failed": 87
+  },
+  "taxonomy_fractions": {
+    "correct_reasoning": 0.66625,
+    "specious_cot": 0.005,
+    "unlucky": 0.22,
+    "failed": 0.10875
+  },
+  "error_distribution": {
+    "independent": 74,
+    "propagated": 3,
+    "invalid_operands": 0
+  },
+  "per_depth": {
+    "1": {
+      "count": 100,
+      "accuracy": 1.0,
+      "taxonomy_counts": {
+        "correct_reasoning": 100,
+        "specious_cot": 0,
+        "unlucky": 0,
+        "failed": 0
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 1.0,
+        "specious_cot": 0.0,
+        "unlucky": 0.0,
+        "failed": 0.0
+      },
+      "avg_computational_correctness": 0.56
+    },
+    "2": {
+      "count": 100,
+      "accuracy": 0.97,
+      "taxonomy_counts": {
+        "correct_reasoning": 97,
+        "specious_cot": 0,
+        "unlucky": 0,
+        "failed": 3
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.97,
+        "specious_cot": 0.0,
+        "unlucky": 0.0,
+        "failed": 0.03
+      },
+      "avg_computational_correctness": 0.62
+    },
+    "3": {
+      "count": 100,
+      "accuracy": 0.92,
+      "taxonomy_counts": {
+        "correct_reasoning": 92,
+        "specious_cot": 0,
+        "unlucky": 4,
+        "failed": 4
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.92,
+        "specious_cot": 0.0,
+        "unlucky": 0.04,
+        "failed": 0.04
+      },
+      "avg_computational_correctness": 0.6476428571428572
+    },
+    "4": {
+      "count": 100,
+      "accuracy": 0.86,
+      "taxonomy_counts": {
+        "correct_reasoning": 83,
+        "specious_cot": 3,
+        "unlucky": 6,
+        "failed": 8
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.83,
+        "specious_cot": 0.03,
+        "unlucky": 0.06,
+        "failed": 0.08
+      },
+      "avg_computational_correctness": 0.6496666666666667
+    },
+    "5": {
+      "count": 100,
+      "accuracy": 0.47,
+      "taxonomy_counts": {
+        "correct_reasoning": 46,
+        "specious_cot": 1,
+        "unlucky": 39,
+        "failed": 14
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.46,
+        "specious_cot": 0.01,
+        "unlucky": 0.39,
+        "failed": 0.14
+      },
+      "avg_computational_correctness": 0.6776428571428572
+    },
+    "6": {
+      "count": 100,
+      "accuracy": 0.4,
+      "taxonomy_counts": {
+        "correct_reasoning": 40,
+        "specious_cot": 0,
+        "unlucky": 52,
+        "failed": 8
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.4,
+        "specious_cot": 0.0,
+        "unlucky": 0.52,
+        "failed": 0.08
+      },
+      "avg_computational_correctness": 0.625079365079365
+    },
+    "7": {
+      "count": 100,
+      "accuracy": 0.39,
+      "taxonomy_counts": {
+        "correct_reasoning": 39,
+        "specious_cot": 0,
+        "unlucky": 45,
+        "failed": 16
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.39,
+        "specious_cot": 0.0,
+        "unlucky": 0.45,
+        "failed": 0.16
+      },
+      "avg_computational_correctness": 0.6205191197691198
+    },
+    "8": {
+      "count": 100,
+      "accuracy": 0.36,
+      "taxonomy_counts": {
+        "correct_reasoning": 36,
+        "specious_cot": 0,
+        "unlucky": 30,
+        "failed": 34
+      },
+      "taxonomy_fractions": {
+        "correct_reasoning": 0.36,
+        "specious_cot": 0.0,
+        "unlucky": 0.3,
+        "failed": 0.34
+      },
+      "avg_computational_correctness": 0.41305555555555556
+    }
+  }
+}
